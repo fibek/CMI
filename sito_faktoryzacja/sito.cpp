@@ -1,20 +1,18 @@
 #include <iostream>
 
-bool s[10000];
+using namespace std;
+
+bool sito[1000];
 
 int main() {
 	int n;
-	std::cin >> n;
-	for(int i = 2 ; i*i <= n; i++) {
-		if(!s[i]) {
-			for(int k=i*i; k <= n; k =k+i)
-				s[k] = 1;
-		}
-	}
-	for(int i = 2; i <= n; i++)
-		if(!s[i]) 
-			std::cout << i << ' ';
-	std::cout << '\n';
-}
-			
-	
+	cin >> n;
+	for(int i = 2; i*i <= n; i++) 
+		if(!sito[i])
+			for(int k = i*i; k <= n; k += i) 
+				sito[k] = true;
+	for(int i = 2; i <= n; i++) 
+		if(!sito[i])
+			cout << i << ' ';
+	cout << '\n';
+}	

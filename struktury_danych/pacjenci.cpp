@@ -10,18 +10,33 @@ int main() {
 	for(int i = 1; i <= n; i++) 
 		cin >> a[i];
 
-	int tmp;
+	int tmp = a[1];
 	int l = n;
-	for(int i = 1; i <= n; i++) {
-		tmp = a[i];
-		if(o[tmp] == 0) 
-			o[tmp] = i;
-		else {
-			while(o[l] != 0)
-				l--;	
-			o[l] = i;
+	bool all = true;
+	int k = 1;
+	while(all && k <= n) {
+		if(tmp == a[k]) {
+			o[k] = k;
+			k++;
+		} else {
+			all = false;
+			for(int i = 1; i <= k; i++)
+				o[i] = 0;
 		}
 	}
+	if(!all) {	
+		for(int i = 1; i <= n; i++) {
+			tmp = a[i];
+			if(o[tmp] == 0) 
+				o[tmp] = i;
+			else {
+				while(o[l] != 0)
+					l--;	
+				o[l] = i;
+			}
+		}
+	}
+
 	for(int i = 1; i <= n; i++) 
 		cout << o[i] << ' ';
 	cout << '\n';

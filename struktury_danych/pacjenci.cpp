@@ -16,8 +16,6 @@ int main() {
 		tmp = a[i];
 		if(o[tmp] == 0) 
 			o[tmp] = i;
-	//	else if(tmp == 1 && a[i] == 1)
-	//		o[i] = i;
 		else {
 			while(o[l] != 0)
 				l--;	

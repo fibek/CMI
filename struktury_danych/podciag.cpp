@@ -20,9 +20,6 @@ int main() {
 				it = s.erase(it);
 			tmp = *it;
 	}
-	for(it = s.begin(); it != s.end(); it++)
-		cout << *it;
-	cout << '\n';
 	int max = s.size() ;
 	s.sort();
 	s.unique();

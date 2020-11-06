@@ -9,16 +9,11 @@ long long nwd(long long a, long long b) {
 }
 int main() {
 	ios_base::sync_with_stdio(0);
-	long long a,b,x,y,nwdxy, c = 0, w, h, minw, minh;
+	long long a,b,x,y,d, c = 0;
 	cin >> a >> b >> x >> y;
 	// nwd(6,4) = 2   x = 6/2 y =4/2 => (3,2)
-	nwdxy = nwd(x,y);
-	w = minw = x / nwdxy;
-	h = minh = y / nwdxy;
-	while(w <= a && h <= b) {
-		w += minw;
-		h += minh;
-		c++;	
-	}
-	cout << c << '\n';
+	d = nwd(x,y);
+	x /= d; y /= d;
+	cout << min(a / x, b / y) << endl;
+	return 0;
 }

@@ -32,5 +32,5 @@ int main() {
 	if( f >= l )
 		cout << price << '\n';
 	else 
-		cout << "NIE\n";
+		cout << "-1\n";
 }

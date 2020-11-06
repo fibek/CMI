@@ -1,0 +1,59 @@
+:Base graph
+:Title Spis treœci
+1 Start
+2 Informacje wstêpne=START
+2 Wymagania programu=HARDWARE
+2 Uruchomienie programu=RUNPROG
+1 Wygl¹d programu
+2 G³ówne okno programu=MAINWIN
+2 Okno grafu=GRAPHWIN
+2 Okno macierzy s¹siadztwa=MATRIXWIN
+2 Okno list s¹siadów=LISTWIN
+2 Okno algorytmu=DEBUGWIN
+2 Okno zmiennych=VARWIN
+2 Okno stosu/kolejki/listy=INFOWIN
+1 Funkcje programu
+2 Operacje na plikach
+3 Tworzenie nowego grafu=NEWGRAPH
+3 Otwieranie grafu z pliku=OPENGRAPH
+3 Zapisywanie grafu do pliku=SAVEGRAPH
+2 Operacje edycji
+3 Cofnij=UNDO
+3 Zmiana nazwy grafu=RENAME
+3 Konwersja grafu=CONVERT
+3 Losowe wagi=RANDW
+3 Blokowanie grafu=LOCK
+2 Edycja wierzcho³ków
+3 Dodawanie wierzcho³ka=ADDVERT
+3 Przesuwanie wierzcho³ka=MOVVERT
+3 Zmiana etykiety wierzcho³ka=RENVERT
+3 Usuwanie wierzcho³ka=DELVERT
+2 Edycja krawêdzi
+3 Dodawanie krawêdzi=ADDEDGE
+3 Ustalanie wagi krawêdzi=RENEDGE
+3 Zmiana kierunku ³uku=INVEDGE
+3 Usuwanie krawêdzi=DELEDGE
+2 Kontrola animacji
+3 Uruchamianie animacji=PLAY
+3 Wykonywanie kroku animacji=STEP
+3 Wstrzymywanie/wznawienie animacji=PAUSE
+3 Przerywanie animacji=STOP
+3 Przyspieszanie animacji=SPEEDUP
+3 Spowalnianie animacji=SPEEDDOWN
+2 Dostosowywanie widoku
+3 Uk³adanie kaskadowe okien=CASCADE
+3 Porz¹dkowanie okien=ARRANGE
+3 Pokazywanie etykiet wierzcho³ków=LABELS
+3 Pokazywanie wag krawêdzi=WEIGHTS
+3 Ustawienia rysowania=SETTINGS
+1 Opis algorytmów
+2 Reprezentacja danych=REPRESENTATION
+2 Przeszukiwanie grafu w g³¹b=DFS
+2 Przeszykiwanie grafu wszerz=BFS
+2 Sortowanie topologiczne=SORT
+2 Najkrótsze œcie¿ki Dijkstry=DIJKSTRA
+2 Najkrótsze œcie¿ki Bellmana-Forda=BELLMANFORD
+2 Najkrótsze œcie¿ki sieci acyklicznej=CPM
+2 Minimalne drzewo rozpinaj¹ce Prima-Dijkstry=PRIMDIJKSTRA
+2 Minimalne drzewo rozpinaj¹ce Kruskala=KRUSKAL
+2 Minimalne drzewo rozpinaj¹ce Solina=SOLIN

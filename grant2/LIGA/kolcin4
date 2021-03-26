@@ -1,0 +1,11 @@
+10
+? T T N N N N N N N
+T ? N T N N N N N N
+T N ? N N N N N N N
+N T N ? T N N N N N
+N N N T ? N N N N N 
+N N N N N ? T N N N
+N N N N N T ? T T N
+N N N N N N T ? T N
+N N N N N N T T ? T
+N N N N N N N N T ?

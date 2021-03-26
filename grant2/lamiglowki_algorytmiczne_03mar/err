@@ -1,0 +1,795 @@
+zwmzad.cpp: In function ‘int main()’:
+zwmzad.cpp:10:6: error: no match for ‘operator>>’ (operand types are ‘std::istream’ {aka ‘std::basic_istream<char>’} and ‘std::vector<bool>::reference’)
+   10 |  cin >> V[i];
+      |  ~~~ ^~ ~~~~
+      |  |         |
+      |  |         std::vector<bool>::reference
+      |  std::istream {aka std::basic_istream<char>}
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:168:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ (near match)
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:168:7: note:   conversion of argument 1 would be ill-formed:
+zwmzad.cpp:10:12: error: cannot bind non-const lvalue reference of type ‘bool&’ to an rvalue of type ‘bool’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/vector:68,
+                 from /usr/include/c++/10.2.0/queue:61,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:86,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_bvector.h:86:5: note:   after user-defined conversion: ‘std::_Bit_reference::operator bool() const’
+   86 |     operator bool() const _GLIBCXX_NOEXCEPT
+      |     ^~~~~~~~
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:172:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]’ (near match)
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:172:7: note:   conversion of argument 1 would be ill-formed:
+zwmzad.cpp:10:12: error: cannot bind non-const lvalue reference of type ‘short int&’ to an rvalue of type ‘short int’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/vector:68,
+                 from /usr/include/c++/10.2.0/queue:61,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:86,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_bvector.h:86:5: note:   after user-defined conversion: ‘std::_Bit_reference::operator bool() const’
+   86 |     operator bool() const _GLIBCXX_NOEXCEPT
+      |     ^~~~~~~~
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:175:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ (near match)
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:175:7: note:   conversion of argument 1 would be ill-formed:
+zwmzad.cpp:10:12: error: cannot bind non-const lvalue reference of type ‘short unsigned int&’ to an rvalue of type ‘short unsigned int’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/vector:68,
+                 from /usr/include/c++/10.2.0/queue:61,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:86,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_bvector.h:86:5: note:   after user-defined conversion: ‘std::_Bit_reference::operator bool() const’
+   86 |     operator bool() const _GLIBCXX_NOEXCEPT
+      |     ^~~~~~~~
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:179:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]’ (near match)
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:179:7: note:   conversion of argument 1 would be ill-formed:
+zwmzad.cpp:10:12: error: cannot bind non-const lvalue reference of type ‘int&’ to an rvalue of type ‘int’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/vector:68,
+                 from /usr/include/c++/10.2.0/queue:61,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:86,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_bvector.h:86:5: note:   after user-defined conversion: ‘std::_Bit_reference::operator bool() const’
+   86 |     operator bool() const _GLIBCXX_NOEXCEPT
+      |     ^~~~~~~~
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:182:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ (near match)
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:182:7: note:   conversion of argument 1 would be ill-formed:
+zwmzad.cpp:10:12: error: cannot bind non-const lvalue reference of type ‘unsigned int&’ to an rvalue of type ‘unsigned int’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/vector:68,
+                 from /usr/include/c++/10.2.0/queue:61,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:86,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_bvector.h:86:5: note:   after user-defined conversion: ‘std::_Bit_reference::operator bool() const’
+   86 |     operator bool() const _GLIBCXX_NOEXCEPT
+      |     ^~~~~~~~
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:186:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ (near match)
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:186:7: note:   conversion of argument 1 would be ill-formed:
+zwmzad.cpp:10:12: error: cannot bind non-const lvalue reference of type ‘long int&’ to an rvalue of type ‘long int’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/vector:68,
+                 from /usr/include/c++/10.2.0/queue:61,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:86,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_bvector.h:86:5: note:   after user-defined conversion: ‘std::_Bit_reference::operator bool() const’
+   86 |     operator bool() const _GLIBCXX_NOEXCEPT
+      |     ^~~~~~~~
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:190:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ (near match)
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:190:7: note:   conversion of argument 1 would be ill-formed:
+zwmzad.cpp:10:12: error: cannot bind non-const lvalue reference of type ‘long unsigned int&’ to an rvalue of type ‘long unsigned int’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/vector:68,
+                 from /usr/include/c++/10.2.0/queue:61,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:86,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_bvector.h:86:5: note:   after user-defined conversion: ‘std::_Bit_reference::operator bool() const’
+   86 |     operator bool() const _GLIBCXX_NOEXCEPT
+      |     ^~~~~~~~
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:195:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ (near match)
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:195:7: note:   conversion of argument 1 would be ill-formed:
+zwmzad.cpp:10:12: error: cannot bind non-const lvalue reference of type ‘long long int&’ to an rvalue of type ‘long long int’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/vector:68,
+                 from /usr/include/c++/10.2.0/queue:61,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:86,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_bvector.h:86:5: note:   after user-defined conversion: ‘std::_Bit_reference::operator bool() const’
+   86 |     operator bool() const _GLIBCXX_NOEXCEPT
+      |     ^~~~~~~~
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:199:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ (near match)
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:199:7: note:   conversion of argument 1 would be ill-formed:
+zwmzad.cpp:10:12: error: cannot bind non-const lvalue reference of type ‘long long unsigned int&’ to an rvalue of type ‘long long unsigned int’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/vector:68,
+                 from /usr/include/c++/10.2.0/queue:61,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:86,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_bvector.h:86:5: note:   after user-defined conversion: ‘std::_Bit_reference::operator bool() const’
+   86 |     operator bool() const _GLIBCXX_NOEXCEPT
+      |     ^~~~~~~~
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:214:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ (near match)
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:214:7: note:   conversion of argument 1 would be ill-formed:
+zwmzad.cpp:10:12: error: cannot bind non-const lvalue reference of type ‘float&’ to an rvalue of type ‘float’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/vector:68,
+                 from /usr/include/c++/10.2.0/queue:61,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:86,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_bvector.h:86:5: note:   after user-defined conversion: ‘std::_Bit_reference::operator bool() const’
+   86 |     operator bool() const _GLIBCXX_NOEXCEPT
+      |     ^~~~~~~~
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:218:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ (near match)
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:218:7: note:   conversion of argument 1 would be ill-formed:
+zwmzad.cpp:10:12: error: cannot bind non-const lvalue reference of type ‘double&’ to an rvalue of type ‘double’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/vector:68,
+                 from /usr/include/c++/10.2.0/queue:61,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:86,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_bvector.h:86:5: note:   after user-defined conversion: ‘std::_Bit_reference::operator bool() const’
+   86 |     operator bool() const _GLIBCXX_NOEXCEPT
+      |     ^~~~~~~~
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:222:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’ (near match)
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:222:7: note:   conversion of argument 1 would be ill-formed:
+zwmzad.cpp:10:12: error: cannot bind non-const lvalue reference of type ‘long double&’ to an rvalue of type ‘long double’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/vector:68,
+                 from /usr/include/c++/10.2.0/queue:61,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:86,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_bvector.h:86:5: note:   after user-defined conversion: ‘std::_Bit_reference::operator bool() const’
+   86 |     operator bool() const _GLIBCXX_NOEXCEPT
+      |     ^~~~~~~~
+zwmzad.cpp:10:6: note: candidate: ‘operator>>(int, int)’ (built-in)
+   10 |  cin >> V[i];
+      |  ~~~~^~~~~~~
+zwmzad.cpp:10:6: note:   no known conversion for argument 1 from ‘std::istream’ {aka ‘std::basic_istream<char>’} to ‘int’
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:120:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:120:36: note:   no known conversion for argument 1 from ‘std::vector<bool>::reference’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)’ {aka ‘std::basic_istream<char>& (*)(std::basic_istream<char>&)’}
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/istream:124:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]’
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:124:32: note:   no known conversion for argument 1 from ‘std::vector<bool>::reference’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)’ {aka ‘std::basic_ios<char>& (*)(std::basic_ios<char>&)’}
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/istream:131:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:131:30: note:   no known conversion for argument 1 from ‘std::vector<bool>::reference’ to ‘std::ios_base& (*)(std::ios_base&)’
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/istream:235:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]’
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:235:25: note:   no known conversion for argument 1 from ‘std::vector<bool>::reference’ to ‘void*&’
+  235 |       operator>>(void*& __p)
+      |                  ~~~~~~~^~~
+/usr/include/c++/10.2.0/istream:259:7: note: candidate: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]’
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+/usr/include/c++/10.2.0/istream:259:36: note:   no known conversion for argument 1 from ‘std::vector<bool>::reference’ to ‘std::basic_istream<char>::__streambuf_type*’ {aka ‘std::basic_streambuf<char>*’}
+  259 |       operator>>(__streambuf_type* __sb);
+      |                  ~~~~~~~~~~~~~~~~~~^~~~
+In file included from /usr/include/c++/10.2.0/string:56,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1476:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 1476 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1476:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/istream:991,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/istream.tcc:931:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)’
+  931 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/istream.tcc:931:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘std::vector<bool>::reference’)
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:756:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)’
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/istream:756:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   cannot convert ‘V.std::vector<bool>::operator[](((std::vector<bool>::size_type)i))’ (type ‘std::vector<bool>::reference’) to type ‘unsigned char&’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:761:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)’
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/istream:761:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   cannot convert ‘V.std::vector<bool>::operator[](((std::vector<bool>::size_type)i))’ (type ‘std::vector<bool>::reference’) to type ‘signed char&’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/istream:991,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/istream.tcc:963:5: note: candidate: ‘template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)’
+  963 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/istream.tcc:963:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   mismatched types ‘_CharT2*’ and ‘std::_Bit_reference’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:803:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)’
+  803 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/istream:803:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   cannot convert ‘V.std::vector<bool>::operator[](((std::vector<bool>::size_type)i))’ (type ‘std::vector<bool>::reference’) to type ‘unsigned char*’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:808:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)’
+  808 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/istream:808:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   cannot convert ‘V.std::vector<bool>::operator[](((std::vector<bool>::size_type)i))’ (type ‘std::vector<bool>::reference’) to type ‘signed char*’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/istream:980:5: note: candidate: ‘template<class _Istream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_istream<_Istream>, std::__is_extractable<typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type, _Tp&&, void> >::value, typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type>::type std::operator>>(_Istream&&, _Tp&&)’
+  980 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/istream:980:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/10.2.0/istream: In substitution of ‘template<class _Istream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_istream<_Istream>, std::__is_extractable<typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type, _Tp&&, void> >::value, typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type>::type std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = std::_Bit_reference]’:
+zwmzad.cpp:10:12:   required from here
+/usr/include/c++/10.2.0/istream:980:5: error: no type named ‘type’ in ‘struct std::enable_if<false, std::basic_istream<char>&>’
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/complex:500:5: note: candidate: ‘template<class _Tp, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::complex<_Tp>&)’
+  500 |     operator>>(basic_istream<_CharT, _Traits>& __is, complex<_Tp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:500:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::complex<_Tp>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:66,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bitset:1472:5: note: candidate: ‘template<class _CharT, class _Traits, long unsigned int _Nb> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::bitset<_Nb>&)’
+ 1472 |     operator>>(std::basic_istream<_CharT, _Traits>& __is, bitset<_Nb>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bitset:1472:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::bitset<_Nb>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:72,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/iomanip:71:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Resetiosflags)’
+   71 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Resetiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/iomanip:71:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   cannot convert ‘V.std::vector<bool>::operator[](((std::vector<bool>::size_type)i))’ (type ‘std::vector<bool>::reference’) to type ‘std::_Resetiosflags’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:72,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/iomanip:101:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setiosflags)’
+  101 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/iomanip:101:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   cannot convert ‘V.std::vector<bool>::operator[](((std::vector<bool>::size_type)i))’ (type ‘std::vector<bool>::reference’) to type ‘std::_Setiosflags’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:72,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/iomanip:132:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setbase)’
+  132 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setbase __f)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/iomanip:132:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   cannot convert ‘V.std::vector<bool>::operator[](((std::vector<bool>::size_type)i))’ (type ‘std::vector<bool>::reference’) to type ‘std::_Setbase’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:72,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/iomanip:170:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setfill<_CharT>)’
+  170 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setfill<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/iomanip:170:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::_Bit_reference’ is not derived from ‘std::_Setfill<_CharT>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:72,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/iomanip:200:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setprecision)’
+  200 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setprecision __f)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/iomanip:200:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   cannot convert ‘V.std::vector<bool>::operator[](((std::vector<bool>::size_type)i))’ (type ‘std::vector<bool>::reference’) to type ‘std::_Setprecision’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:72,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/iomanip:230:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setw)’
+  230 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Setw __f)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/iomanip:230:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   cannot convert ‘V.std::vector<bool>::operator[](((std::vector<bool>::size_type)i))’ (type ‘std::vector<bool>::reference’) to type ‘std::_Setw’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:72,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/iomanip:264:5: note: candidate: ‘template<class _CharT, class _Traits, class _MoneyT> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Get_money<_MoneyT>)’
+  264 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Get_money<_MoneyT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/iomanip:264:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::_Bit_reference’ is not derived from ‘std::_Get_money<_MoneyT>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:72,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/iomanip:418:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Get_time<_CharT>)’
+  418 |     operator>>(basic_istream<_CharT, _Traits>& __is, _Get_time<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/iomanip:418:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::_Bit_reference’ is not derived from ‘std::_Get_time<_CharT>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:414:5: note: candidate: ‘template<class _Dom1, class _Dom2> std::_Expr<std::__detail::_BinClos<std::__shift_right, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)’
+  414 |     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:414:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:414:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__shift_right, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)’
+  414 |     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:414:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:414:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__shift_right, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)’
+  414 |     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:414:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:414:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__shift_right, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)’
+  414 |     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:414:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:414:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__shift_right, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)’
+  414 |     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:414:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/valarray:1194:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__shift_right, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__shift_right, _Tp>::result_type> std::operator>>(const std::valarray<_Tp>&, const std::valarray<_Tp>&)’
+ 1194 | _DEFINE_BINARY_OPERATOR(>>, __shift_right)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1194:1: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::valarray<_Tp>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/valarray:1194:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__shift_right, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__shift_right, _Tp>::result_type> std::operator>>(const std::valarray<_Tp>&, const typename std::valarray<_Tp>::value_type&)’
+ 1194 | _DEFINE_BINARY_OPERATOR(>>, __shift_right)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1194:1: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::valarray<_Tp>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/valarray:1194:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__shift_right, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__shift_right, _Tp>::result_type> std::operator>>(const typename std::valarray<_Tp>::value_type&, const std::valarray<_Tp>&)’
+ 1194 | _DEFINE_BINARY_OPERATOR(>>, __shift_right)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1194:1: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘const std::valarray<_Tp>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:887:5: note: candidate: ‘template<class _IntType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::uniform_int_distribution<_IntType>&)’
+  887 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:887:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::uniform_int_distribution<_IntType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:948:5: note: candidate: ‘template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::uniform_real_distribution<_IntType>&)’
+  948 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:948:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::uniform_real_distribution<_IntType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:2133:5: note: candidate: ‘template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::cauchy_distribution<_RealType>&)’
+ 2133 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:2133:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::cauchy_distribution<_RealType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:49,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.h:3711:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::bernoulli_distribution&)’
+ 3711 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.h:3711:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   cannot convert ‘V.std::vector<bool>::operator[](((std::vector<bool>::size_type)i))’ (type ‘std::vector<bool>::reference’) to type ‘std::bernoulli_distribution&’
+   10 |  cin >> V[i];
+      |         ~~~^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:1090:5: note: candidate: ‘template<class _IntType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::geometric_distribution<_IntType>&)’
+ 1090 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:1090:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::geometric_distribution<_IntType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:1741:5: note: candidate: ‘template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::exponential_distribution<_RealType>&)’
+ 1741 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:1741:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::exponential_distribution<_RealType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:2527:5: note: candidate: ‘template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::weibull_distribution<_RealType>&)’
+ 2527 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:2527:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::weibull_distribution<_RealType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:2601:5: note: candidate: ‘template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::extreme_value_distribution<_RealType>&)’
+ 2601 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:2601:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::extreme_value_distribution<_RealType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:175:5: note: candidate: ‘template<class _UIntType, _UIntType __a, _UIntType __c, _UIntType __m, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::linear_congruential_engine<_UIntType, __a, __c, __m>&)’
+  175 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:175:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::linear_congruential_engine<_UIntType, __a, __c, __m>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:501:5: note: candidate: ‘template<class _UIntType1, long unsigned int __w1, long unsigned int __n1, long unsigned int __m1, long unsigned int __r1, _UIntType1 __a1, long unsigned int __u1, _UIntType1 __d1, long unsigned int __s1, _UIntType1 __b1, long unsigned int __t1, _UIntType1 __c1, long unsigned int __l1, _UIntType1 __f1, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>&)’
+  501 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:501:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:652:5: note: candidate: ‘template<class _UIntType, long unsigned int __w, long unsigned int __s, long unsigned int __r, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::subtract_with_carry_engine<_UIntType, __w, __s, __r>&)’
+  652 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:652:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::subtract_with_carry_engine<_UIntType, __w, __s, __r>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:718:5: note: candidate: ‘template<class _RandomNumberEngine, long unsigned int __p, long unsigned int __r, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::discard_block_engine<_RandomNumberEngine, __p, __r>&)’
+  718 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:718:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::discard_block_engine<_RandomNumberEngine, __p, __r>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:847:5: note: candidate: ‘template<class _RandomNumberEngine, long unsigned int __k, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::shuffle_order_engine<_RandomNumberEngine, __k>&)’
+  847 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:847:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::shuffle_order_engine<_RandomNumberEngine, __k>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:1205:5: note: candidate: ‘template<class _IntType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::negative_binomial_distribution<_IntType>&)’
+ 1205 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:1205:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::negative_binomial_distribution<_IntType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:1415:5: note: candidate: ‘template<class _IntType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::poisson_distribution<_IntType>&)’
+ 1415 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:1415:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::poisson_distribution<_IntType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:1682:5: note: candidate: ‘template<class _IntType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::binomial_distribution<_IntType>&)’
+ 1682 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:1682:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::binomial_distribution<_IntType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:1911:5: note: candidate: ‘template<class _RealType1, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::normal_distribution<_RealType>&)’
+ 1911 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:1911:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::normal_distribution<_RealType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:1976:5: note: candidate: ‘template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::lognormal_distribution<_RealType>&)’
+ 1976 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:1976:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::lognormal_distribution<_RealType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:2047:5: note: candidate: ‘template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::chi_squared_distribution<_RealType>&)’
+ 2047 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:2047:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::chi_squared_distribution<_RealType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:2209:5: note: candidate: ‘template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::fisher_f_distribution<_RealType>&)’
+ 2209 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:2209:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::fisher_f_distribution<_RealType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:2282:5: note: candidate: ‘template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::student_t_distribution<_RealType>&)’
+ 2282 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:2282:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::student_t_distribution<_RealType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:2452:5: note: candidate: ‘template<class _RealType1, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::gamma_distribution<_RealType>&)’
+ 2452 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:2452:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::gamma_distribution<_RealType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:2759:5: note: candidate: ‘template<class _IntType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::discrete_distribution<_IntType>&)’
+ 2759 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:2759:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::discrete_distribution<_IntType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:2965:5: note: candidate: ‘template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::piecewise_constant_distribution<_RealType>&)’
+ 2965 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:2965:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::piecewise_constant_distribution<_RealType>’
+   10 |  cin >> V[i];
+      |            ^
+In file included from /usr/include/c++/10.2.0/random:51,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:108,
+                 from zwmzad.cpp:1:
+/usr/include/c++/10.2.0/bits/random.tcc:3170:5: note: candidate: ‘template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::piecewise_linear_distribution<_RealType>&)’
+ 3170 |     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/random.tcc:3170:5: note:   template argument deduction/substitution failed:
+zwmzad.cpp:10:12: note:   ‘std::vector<bool>::reference’ is not derived from ‘std::piecewise_linear_distribution<_RealType>’
+   10 |  cin >> V[i];
+      |            ^

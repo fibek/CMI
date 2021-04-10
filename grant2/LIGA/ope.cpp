@@ -1,4 +1,3 @@
-//odległość Levenshteina
 #include <bits/stdc++.h>
 
 using namespace std;

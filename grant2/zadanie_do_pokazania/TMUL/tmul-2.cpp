@@ -1,10 +1,6 @@
 #include <bits/stdc++.h>
 
-using std::cin;
-using std::cout;
-using std::string;
-
-typedef long long ll;
+using namespace std;
 
 string sum(const string &a, const string &b) {
     string c;
@@ -73,47 +69,15 @@ string product_ru(string a, string b) {
     return result;
 }
 
-string ll2str(ll a) {
-    string result;
-    while(a > 0) {
-	char ch = a%10+'0';
-	result = ch+result;
-	a/=10;
-    }
-    return result;
-}
-
-string modulo(string a, ll n) {
-    ll result = 0;
-    for(int i = 0; i < a.size(); i++)
-	result = (result * 10 + a[i]-'0') % n;
-    string res = ll2str(result);
-    if(res == "")
-	return "0";
-    return res;
-}
-
-string modular_power(string p, string exponent, ll n) {
-    if(exponent == "0")
-	return "1";
-    string x = modular_power(p, divide_2(exponent), n);
-    x = modulo(product_ru(x,x), n);
-    if(modulo(exponent, 2) > "0") {
-	x = modulo(product_ru(x,p), n);
-    }
-    return x;
-}
-
 int main() {
     std::ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     int t;
     string x,y;
-    ll n;
     cin >> t;
     for(int i = 0; i < t; i++) {
-	cin >> x >> y >> n;
-	cout << modular_power(x,y,n) << '\n';
+	cin >> x >> y;
+	cout << product_ru(x,y) << '\n';
     }
 }
 

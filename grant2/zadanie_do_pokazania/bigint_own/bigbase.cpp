@@ -2,8 +2,8 @@
 
 using namespace std;
 
-const int BASE = 10;
-const int BZ = 1;
+const int BASE = 1000000;
+const int BZ = 6;
 
 struct BigInt {
     vector<int> num;
@@ -78,27 +78,88 @@ BigInt operator-(BigInt a, BigInt b) {
     return diff;
 }
 
-/* BigInt karatsuba(BigInt a, BigInt b) { */
-/*     BigInt z0, z1, z2, */
-/* 	   h0, h1, */ 
-/* 	   l0, l1; */
-/*     int n = min(a.size(), b.size())/2; */
-/*     l0.num(a.num.begin(), a.num.begin()+n); */
-/*     h0.num(a.num.begin()+n, a.num.end()); */
-/*     l1.num(b.num.begin(), b.num.begin()+n); */
-/*     h1.num(b.num.begin()+n, b.num.end()); */
+BigInt product_1(BigInt a, int n) {
+    BigInt result;
+    result.num.resize(a.size());
+    int carry = 0;
+    int s = a.num.size();
+    for(int i = 0; i < s; i++) {
+	int tmp = a.num[i]*n + carry;
+	result.num[i] = tmp%BASE;
+	carry = tmp/BASE;
+    }
+    if(carry > 0) 
+	result.num.push_back(carry);
+    return result;
+}
 
-/*     z0 = karatsuba(l0, l1); */
-/*     z1 = karatsuba(); */
-/*     z2 = karatsuba(h0, h1); */
+BigInt div_2(BigInt a) {
+    BigInt result;
+    result.num.resize(a.size());
+    if(a.size() == 1 && (a.num[0] == 0 || a.num[0] == 1)) {
+	BigInt t("0");
+	return t;
+    }
+    int dividend = 0;
+    for(int i = a.size()-1; i >= 0; i--) {
+	dividend += a.num[i];
+	int tmp = dividend/2;
+	result.num[i] = tmp;
+	dividend = (dividend % 2)*10;
+    }
+    if(result.num.back() == 0)
+	result.num.pop_back();
+    return result;
+}
 
-/*     return 0; */
-/* } */
+BigInt operator*(BigInt a, BigInt b) {
+    BigInt result("0");
+    if(a.num.back() == 0) 
+	return result;
+    while(b.num.back() > 0) {
+	if(b.num.front() % 2 > 0)
+	    result = result+a;
+	a = product_1(a,2);
+	b = div_2(b);
+    }
+    return result;
+}
 
 int main() {
-    BigInt a("124125125"), b("51235"), sumab, proab, diffab;
-    a.display(); b.display();
-    sumab = a+b; sumab.display();
-    diffab = b-a; diffab.display();
-    /* proab = karatsuba(a,b); proab.display(); */
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int n;
+    string sa,sb;
+    cin >> n;
+    for(int i = 0; i < n; i++) {
+	cin >> sa >> sb;
+	BigInt a(sa), b(sb);
+	BigInt result = a*b;
+	result.display();
+    }
 }
+
+/* BigInt karatsuba(BigInt a, BigInt b) { */
+/*     int n = max(a.size(), b.size())/2; */
+
+/*     BigInt a_0,a_1,b_0,b_1; */
+/*     a_1.num.assign(a.num.begin(), a.num.begin()+n); */
+/*     a_0.num.assign(a.num.begin()+n, a.num.end()); */
+/*     b_1.num.assign(b.num.begin(), b.num.begin()+n); */
+/*     b_0.num.assign(b.num.begin()+n, b.num.end()); */
+
+/*     BigInt k0,k1,k2; */
+/*     k0 = karatsuba(a_0, b_0); */
+/*     k2 = karatsuba(a_1, b_1); */
+/*     k1 = karatsuba(a_0+a_1, b_0+b_1); */
+    
+/*     BigInt tmp1(string(2*n, '0')), */
+/* 	   tmp2(string(n, '0')); */
+/*     BigInt tmp3,tmp4; */
+/*     tmp3.num.assign(k2.num.begin(), k2.num.end()); */  
+/*     tmp3.num.insert(tmp3.num.end(), tmp1.num.begin(), tmp1.num.end()); */
+/*     tmp4.num.assign(k1.num.begin(), k1.num.end()); */  
+/*     tmp4.num.insert(tmp4.num.end(), tmp2.num.begin(), tmp2.num.end()); */
+/*     return tmp3+(tmp2+k0); */
+/* } */
+

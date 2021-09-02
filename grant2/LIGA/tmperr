@@ -1,0 +1,1501 @@
+sab.cpp: In function ‘int main()’:
+sab.cpp:29:30: error: no match for ‘operator+’ (operand types are ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} and ‘int’)
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                            ~~^~
+      |                            |  |
+      |                            |  int
+      |                            std::string {aka std::__cxx11::basic_string<char>}
+In file included from /usr/include/c++/10.2.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/10.2.0/bits/char_traits.h:39,
+                 from /usr/include/c++/10.2.0/ios:40,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_iterator.h:508:5: note: candidate: ‘template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)’
+  508 |     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/stl_iterator.h:508:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/10.2.0/bits/char_traits.h:39,
+                 from /usr/include/c++/10.2.0/ios:40,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1540:5: note: candidate: ‘template<class _Iterator> std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)’
+ 1540 |     operator+(typename move_iterator<_Iterator>::difference_type __n,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1540:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6022:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6022 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6022:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/string:56,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1160:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 1160 |     operator+(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1160:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const _CharT*’ and ‘std::__cxx11::basic_string<char>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/string:56,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1180:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 1180 |     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1180:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6059:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)’
+ 6059 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6059:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const _CharT*’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6075:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)’
+ 6075 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6075:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘int’)
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6087:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6087 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6087:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6093:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6093 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6093:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6099:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6099 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6099:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6121:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6121 |     operator+(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6121:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const _CharT*’ and ‘std::__cxx11::basic_string<char>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6127:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6127 |     operator+(_CharT __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6127:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6133:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)’
+ 6133 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6133:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const _CharT*’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6139:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)’
+ 6139 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6139:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘int’)
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:331:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const std::complex<_Tp>&)’
+  331 |     operator+(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:331:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::complex<_Tp>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:340:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const _Tp&)’
+  340 |     operator+(const complex<_Tp>& __x, const _Tp& __y)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:340:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::complex<_Tp>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:349:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const _Tp&, const std::complex<_Tp>&)’
+  349 |     operator+(const _Tp& __x, const complex<_Tp>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:349:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const std::complex<_Tp>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:450:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&)’
+  450 |     operator+(const complex<_Tp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:450:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::complex<_Tp>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom1, class _Dom2> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/valarray:1185:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const std::valarray<_Tp>&, const std::valarray<_Tp>&)’
+ 1185 | _DEFINE_BINARY_OPERATOR(+, __plus)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1185:1: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::valarray<_Tp>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/valarray:1185:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const std::valarray<_Tp>&, const typename std::valarray<_Tp>::value_type&)’
+ 1185 | _DEFINE_BINARY_OPERATOR(+, __plus)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1185:1: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::valarray<_Tp>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/valarray:1185:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const typename std::valarray<_Tp>::value_type&, const std::valarray<_Tp>&)’
+ 1185 | _DEFINE_BINARY_OPERATOR(+, __plus)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1185:1: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const std::valarray<_Tp>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+In file included from /usr/include/c++/10.2.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/10.2.0/bits/char_traits.h:39,
+                 from /usr/include/c++/10.2.0/ios:40,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1185:5: note: candidate: ‘template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)’
+ 1185 |     operator+(typename __normal_iterator<_Iterator, _Container>::difference_type
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1185:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:31: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                               ^
+sab.cpp:29:35: error: no match for ‘operator+’ (operand types are ‘int’ and ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’})
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                  ~^~~
+      |                                  | |
+      |                                  | std::string {aka std::__cxx11::basic_string<char>}
+      |                                  int
+In file included from /usr/include/c++/10.2.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/10.2.0/bits/char_traits.h:39,
+                 from /usr/include/c++/10.2.0/ios:40,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_iterator.h:508:5: note: candidate: ‘template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)’
+  508 |     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/stl_iterator.h:508:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::reverse_iterator<_Iterator>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/10.2.0/bits/char_traits.h:39,
+                 from /usr/include/c++/10.2.0/ios:40,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1540:5: note: candidate: ‘template<class _Iterator> std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)’
+ 1540 |     operator+(typename move_iterator<_Iterator>::difference_type __n,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1540:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::move_iterator<_IteratorL>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6022:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6022 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6022:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/string:56,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1160:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 1160 |     operator+(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1160:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const _CharT*’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/string:56,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1180:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 1180 |     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1180:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   deduced conflicting types for parameter ‘_CharT’ (‘int’ and ‘char’)
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6059:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)’
+ 6059 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6059:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6075:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)’
+ 6075 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6075:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6087:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6087 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6087:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6093:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6093 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6093:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6099:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6099 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6099:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6121:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6121 |     operator+(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6121:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const _CharT*’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6127:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6127 |     operator+(_CharT __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6127:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   deduced conflicting types for parameter ‘_CharT’ (‘int’ and ‘char’)
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6133:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)’
+ 6133 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6133:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6139:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)’
+ 6139 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6139:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:331:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const std::complex<_Tp>&)’
+  331 |     operator+(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:331:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const std::complex<_Tp>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:340:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const _Tp&)’
+  340 |     operator+(const complex<_Tp>& __x, const _Tp& __y)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:340:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const std::complex<_Tp>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:349:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const _Tp&, const std::complex<_Tp>&)’
+  349 |     operator+(const _Tp& __x, const complex<_Tp>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:349:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::complex<_Tp>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:450:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&)’
+  450 |     operator+(const complex<_Tp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:450:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const std::complex<_Tp>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom1, class _Dom2> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/valarray:1185:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const std::valarray<_Tp>&, const std::valarray<_Tp>&)’
+ 1185 | _DEFINE_BINARY_OPERATOR(+, __plus)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1185:1: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const std::valarray<_Tp>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/valarray:1185:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const std::valarray<_Tp>&, const typename std::valarray<_Tp>::value_type&)’
+ 1185 | _DEFINE_BINARY_OPERATOR(+, __plus)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1185:1: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   mismatched types ‘const std::valarray<_Tp>’ and ‘int’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/valarray:1185:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const typename std::valarray<_Tp>::value_type&, const std::valarray<_Tp>&)’
+ 1185 | _DEFINE_BINARY_OPERATOR(+, __plus)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1185:1: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::valarray<_Tp>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+In file included from /usr/include/c++/10.2.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/10.2.0/bits/char_traits.h:39,
+                 from /usr/include/c++/10.2.0/ios:40,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1185:5: note: candidate: ‘template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)’
+ 1185 |     operator+(typename __normal_iterator<_Iterator, _Container>::difference_type
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1185:5: note:   template argument deduction/substitution failed:
+sab.cpp:29:36: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+   29 |   string K[8] = {i+j, j+i, s1+j, j+s1,
+      |                                    ^~
+sab.cpp:30:12: error: no match for ‘operator+’ (operand types are ‘int’ and ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’})
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |           ~^~~
+      |           | |
+      |           | std::string {aka std::__cxx11::basic_string<char>}
+      |           int
+In file included from /usr/include/c++/10.2.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/10.2.0/bits/char_traits.h:39,
+                 from /usr/include/c++/10.2.0/ios:40,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_iterator.h:508:5: note: candidate: ‘template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)’
+  508 |     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/stl_iterator.h:508:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::reverse_iterator<_Iterator>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/10.2.0/bits/char_traits.h:39,
+                 from /usr/include/c++/10.2.0/ios:40,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1540:5: note: candidate: ‘template<class _Iterator> std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)’
+ 1540 |     operator+(typename move_iterator<_Iterator>::difference_type __n,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1540:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::move_iterator<_IteratorL>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6022:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6022 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6022:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/string:56,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1160:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 1160 |     operator+(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1160:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const _CharT*’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/string:56,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1180:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 1180 |     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1180:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   deduced conflicting types for parameter ‘_CharT’ (‘int’ and ‘char’)
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6059:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)’
+ 6059 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6059:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6075:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)’
+ 6075 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6075:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6087:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6087 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6087:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6093:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6093 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6093:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6099:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6099 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6099:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6121:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6121 |     operator+(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6121:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const _CharT*’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6127:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6127 |     operator+(_CharT __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6127:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   deduced conflicting types for parameter ‘_CharT’ (‘int’ and ‘char’)
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6133:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)’
+ 6133 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6133:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6139:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)’
+ 6139 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6139:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:331:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const std::complex<_Tp>&)’
+  331 |     operator+(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:331:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const std::complex<_Tp>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:340:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const _Tp&)’
+  340 |     operator+(const complex<_Tp>& __x, const _Tp& __y)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:340:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const std::complex<_Tp>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:349:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const _Tp&, const std::complex<_Tp>&)’
+  349 |     operator+(const _Tp& __x, const complex<_Tp>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:349:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::complex<_Tp>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:450:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&)’
+  450 |     operator+(const complex<_Tp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:450:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const std::complex<_Tp>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom1, class _Dom2> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/valarray:1185:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const std::valarray<_Tp>&, const std::valarray<_Tp>&)’
+ 1185 | _DEFINE_BINARY_OPERATOR(+, __plus)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1185:1: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const std::valarray<_Tp>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/valarray:1185:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const std::valarray<_Tp>&, const typename std::valarray<_Tp>::value_type&)’
+ 1185 | _DEFINE_BINARY_OPERATOR(+, __plus)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1185:1: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   mismatched types ‘const std::valarray<_Tp>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/valarray:1185:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const typename std::valarray<_Tp>::value_type&, const std::valarray<_Tp>&)’
+ 1185 | _DEFINE_BINARY_OPERATOR(+, __plus)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1185:1: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::valarray<_Tp>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+In file included from /usr/include/c++/10.2.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/10.2.0/bits/char_traits.h:39,
+                 from /usr/include/c++/10.2.0/ios:40,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1185:5: note: candidate: ‘template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)’
+ 1185 |     operator+(typename __normal_iterator<_Iterator, _Container>::difference_type
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1185:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:13: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |             ^~
+sab.cpp:30:19: error: no match for ‘operator+’ (operand types are ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} and ‘int’)
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                 ~~^~
+      |                 |  |
+      |                 |  int
+      |                 std::string {aka std::__cxx11::basic_string<char>}
+In file included from /usr/include/c++/10.2.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/10.2.0/bits/char_traits.h:39,
+                 from /usr/include/c++/10.2.0/ios:40,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_iterator.h:508:5: note: candidate: ‘template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)’
+  508 |     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/stl_iterator.h:508:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/10.2.0/bits/char_traits.h:39,
+                 from /usr/include/c++/10.2.0/ios:40,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1540:5: note: candidate: ‘template<class _Iterator> std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)’
+ 1540 |     operator+(typename move_iterator<_Iterator>::difference_type __n,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1540:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6022:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6022 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6022:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/string:56,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1160:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 1160 |     operator+(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1160:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const _CharT*’ and ‘std::__cxx11::basic_string<char>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/string:56,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1180:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 1180 |     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.tcc:1180:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6059:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)’
+ 6059 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6059:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const _CharT*’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6075:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)’
+ 6075 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6075:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘int’)
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6087:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6087 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6087:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6093:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6093 |     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6093:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6099:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6099 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6099:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6121:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6121 |     operator+(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6121:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const _CharT*’ and ‘std::__cxx11::basic_string<char>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6127:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)’
+ 6127 |     operator+(_CharT __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6127:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6133:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)’
+ 6133 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6133:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const _CharT*’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/basic_string.h:6139:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)’
+ 6139 |     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/basic_string.h:6139:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘int’)
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:331:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const std::complex<_Tp>&)’
+  331 |     operator+(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:331:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::complex<_Tp>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:340:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const _Tp&)’
+  340 |     operator+(const complex<_Tp>& __x, const _Tp& __y)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:340:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::complex<_Tp>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:349:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const _Tp&, const std::complex<_Tp>&)’
+  349 |     operator+(const _Tp& __x, const complex<_Tp>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:349:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const std::complex<_Tp>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/complex:450:5: note: candidate: ‘template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&)’
+  450 |     operator+(const complex<_Tp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/complex:450:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::complex<_Tp>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom1, class _Dom2> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/valarray:603,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note: candidate: ‘template<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)’
+  405 |     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/valarray_after.h:405:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/valarray:1185:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const std::valarray<_Tp>&, const std::valarray<_Tp>&)’
+ 1185 | _DEFINE_BINARY_OPERATOR(+, __plus)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1185:1: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::valarray<_Tp>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/valarray:1185:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const std::valarray<_Tp>&, const typename std::valarray<_Tp>::value_type&)’
+ 1185 | _DEFINE_BINARY_OPERATOR(+, __plus)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1185:1: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::valarray<_Tp>’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:95,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/valarray:1185:1: note: candidate: ‘template<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const typename std::valarray<_Tp>::value_type&, const std::valarray<_Tp>&)’
+ 1185 | _DEFINE_BINARY_OPERATOR(+, __plus)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/valarray:1185:1: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const std::valarray<_Tp>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
+In file included from /usr/include/c++/10.2.0/bits/stl_algobase.h:67,
+                 from /usr/include/c++/10.2.0/bits/char_traits.h:39,
+                 from /usr/include/c++/10.2.0/ios:40,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from sab.cpp:1:
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1185:5: note: candidate: ‘template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)’
+ 1185 |     operator+(typename __normal_iterator<_Iterator, _Container>::difference_type
+      |     ^~~~~~~~
+/usr/include/c++/10.2.0/bits/stl_iterator.h:1185:5: note:   template argument deduction/substitution failed:
+sab.cpp:30:20: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’ and ‘int’
+   30 |           i+s2, s2+i, s1+s2, s2+s1};
+      |                    ^
